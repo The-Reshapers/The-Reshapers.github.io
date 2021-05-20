@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Philosopher:wght@700&display=swap');
+       
+        h1,h2,h3,h4,h5,h6{
+            font-family: 'Philosopher', sans-serif;
+        }
+        main{
+            max-width: 800px;
+            margin: 0 auto;
+            font-family: 'Inconsolata', monospace;
+            
+        }
+        h1{
+            font-size: 3rem;
+        }
+        header img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            object-position: bottom;
+        }
+        .box {
+            position: relative;
+        }
+        .overlay {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: 0 auto;
+            padding-left: 25px;
+            color: white;
+        }
+        
+        table {
+            width: 100%;
+        }
+        tr th{
+            padding-right: 10px;
+        }
+        td{
+            border: 1px dotted black;
+            padding-right: 10px;
+        }
+        thead tr{
+            background-color: aqua;
+            
+        }
+        header{
+            height: 300px;
+            width: 100%;
+        }
+        
+        .gallery ul {
+            display: flex;
+            flex-flow: row;
+            width: 100%;
+            overflow: scroll;
+            padding-left: 0;
+        }
+    
+        .gallery li {
+            list-style-type: none;
+            flex-shrink: 0;
+        }
+    
+        .gallery img {
+            max-height: 300px;
+            object-fit: cover;
+            vertical-align: bottom;
+        }
+    
+        .gallery .box {
+            position: relative;
+        }
+    
+        .gallery .overlay {
+            position: absolute;
+            top: 35%;
+            left: 0;
+            right: 0;
+            max-width: 300px;
+            margin: 0 auto;
+        }
+    
+        .gallery .overlay.two {
+            top: unset;
+            bottom: 0;
+            max-width: none;
+            padding-left: 0;
+        }
+    
+        .gallery p {
+            color: white;
+            font-size: 2rem;
+            background: #000000ba;
+            padding: 5px 20px;
+            text-align: center;
+        }
+    
+        .gallery p.two {
+            font-size: 1.1rem;
+            margin: 0;
+            border-bottom: 2px;
+            border-top: 2px;
+            border-left: 1px;
+            border-right: 1px;
+            border-color: white;
+            border-style: solid;
+        }
+        @media (max-width: 500px){
+            body{
+                max-width: 500px;
+            }
+            header img{
+                max-width: none;
+            }
+            main {
+                max-width: none;
+                padding: 0 10px;
+            }
+        }
+        </style>
+</head>
+
+<body>
+    <header>
+        <div class="box">
+            <img src="./resources/img/0.jpg" alt=""/>
+            <div class="overlay">
+                <h1>Madrid Workation Program</h1>
+            </div>
+        </div>
+    </header>
+                <main>
+
+                    
+                
+
+                <p>Come to Madrid to establish your operation hub in Europe, hire the best talent, find the best providers, build your business network, visit Silicon River and enjoy one of the most exciting capitals of the world.  Our two week program will take your business to the next level.</p>
+
+                <h3 id="a-typical-day">A Typical day</h3>
+                <p>Every morning participants holds a standup meeting to share goals for the day as well as insights and achievements from previous days. Then engage in scheduled activities that includes:</p>
+                <ul>
+                    <li>1-on-1 meetings with mentors</li>
+                    <li>Training sessions</li>
+                    <li>Visits to special venues</li>
+                    <li>Hiring interviews</li>
+                </ul>
+
+                <p>
+                    <u>Schedule</u>
+                </p>
+
+                <p>
+                    09:00 Breakfast
+                    <br/>
+
+                    10:00 Daily Standup
+                    <br/>
+
+                    10:30 Morning session
+                    <br/>
+
+                    14:00 Lunch
+                    <br/>
+
+                    15:00 Afternoon session
+                    <br/>
+
+                    18:00 Activity
+                    <br/>
+
+                    22:00 Dinner
+                </p>
+                <h3 id="work-activities">Work Activities</h3>
+                <p>Breakfast provided by us, lunch outsourced to Tirso de Molina market, keynotes delivered by guests</p>
+                <div class="gallery">
+                    <ul>
+                        <li>
+                            <div class="box">
+                                <img src="./resources/img/w1.jpg"/>
+                                <div class="overlay">
+                                    <p>Daily Standups</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="box">
+                                <img src="./resources/img/w2.jpg"/>
+                                <div class="overlay">
+                                    <p>Community Lunch</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="box">
+                                <img src="./resources/img/w3.jpg"/>
+                                <div class="overlay">
+                                    <p>Workshops</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="box">
+                                <img src="./resources/img/w4.jpg"/>
+                                <div class="overlay">
+                                    <p>Keynotes</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="box">
+                                <img src="./resources/img/w5.jpg"/>
+                                <div class="overlay">
+                                    <p>Meetings</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <h3 id="leisure">Leisure</h3>
+                <p>Each afternoon an interesting activity and a dinner in a trendy place.</p>
+                <div class="gallery">
+                    <ul>
+                        <li>
+                            <a href="https://www.instagram.com/rest_lateral/">
+                                <div class="box">
+                                    <img src="./resources/img/l02.jpg"/>
+                                    <div class="overlay two">
+                                        <p class="two">Lateral</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.posadadelavilla.com/">
+                                <div class="box">
+                                    <img src="./resources/img/l01.jpg"/>
+                                    <div class="overlay two">
+                                        <p class="two">Posada de la Villa</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://lapaellareal.es/">
+                                <div class="box">
+                                    <img src="./resources/img/l03.jpg"/>
+                                    <div class="overlay two">
+                                        <p class="two">La Paella Real</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/ginkgoskybar/">
+                                <div class="box">
+                                    <img src="./resources/img/l04.jpg"/>
+                                    <div class="overlay two">
+                                        <p class="two">Ginkgo Sky bar</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/restaurantelaprimera/">
+                                <div class="box">
+                                    <img src="./resources/img/l05.jpg"/>
+                                    <div class="overlay two">
+                                        <p class="two">La Primera</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/hotelriuplazaespana/">
+                                <div class="box">
+                                    <img src="./resources/img/l06.jpg"/>
+                                    <div class="overlay two">
+                                        <p class="two">De Madrid al Cielo</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/boscodelobosmadrid/">
+                                <div class="box">
+                                    <img src="./resources/img/l07.jpg"/>
+                                    <div class="overlay two">
+                                        <p class="two">Bosco de Lobos</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/luzibombon/">
+                                <div class="box">
+                                    <img src="./resources/img/l08.jpg"/>
+                                    <div class="overlay two">
+                                        <p class="two">Luzi Bombón</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/bigmamma.es/">
+                                <div class="box">
+                                    <img src="./resources/img/l09.jpg"/>
+                                    <div class="overlay two">
+                                        <p class="two">Belmondo</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/cafedelriomad/">
+                                <div class="box">
+                                    <img src="./resources/img/l010.jpg"/>
+                                    <div class="overlay two">
+                                        <p class="two">Cafe del Río</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <h3 id="segmentation">Segmentation</h3>
+                <p>Young entrepreneurs, traders, freelancers, content creators, influencers wanting to expand their business knowledge and experience</p>
+                <h3 id="target">Target</h3>
+                <ul>
+                    <li>Young people deciding whether to launch a business or not</li>
+                    <li>Entrepreneurs wanting to scale up</li>
+                </ul>
+
+                <!-- [Entrepreneur's Fight Club](https://entrepreneursfight.club)   -->
+                <p>
+                    <a href="https://www.ceaje.es">Confederación Española Jóvenes Empresarios</a>
+                    <br/>
+                    <a href="https://ajetenerife.com">Jóvenes Empresarios de Tenerife</a>
+                </p>
+
+                <h2 id="competitor-analysis">Competitor analysis</h2>
+                <h3 id="language-immersion-programs">Language Immersion Programs</h3>
+                <p>
+                    <a href="https://www.ailmadrid.com/en/courses/educational-study-tours/high-school-study-programs/">AIL Madrid</a>
+                    <br/>
+                    <a href="/resources/files/barcelona-immersion-brochure-2021.pdf">Fluenz Barcelona</a>
+                    : 7 days, 6.000€ approx. Includes accomodation. Targeted to multinationals C-suite
+                </p>
+                <h3 id="mbas-in-entrepreneurship">MBAs in Entrepreneurship</h3>
+                <p>
+                    <a href="https://actonmadrid.ufm.edu/faq/">Acton MBA Madrid</a>
+                    : 11 months, 28.000€
+                    <br/>
+                    <a href="https://www.obsbusiness.school/masters-online/master-en-innovacion-y-emprendimiento?&amp;var=no&amp;c=IES001MA201&amp;gclid=Cj0KCQjw3duCBhCAARIsAJeFyPXcEZaOpWx8jedRWrt88CMbdgK0f4Btk7SWiTr8ftgAL49sxs-89BQaAlKrEALw_wcB&amp;gclsrc=aw.ds">OBS Business School</a>
+                    : Online, 12 months, 7500€
+                </p>
+                <h3 id="coliving-digital-nomads">Coliving Digital Nomads</h3>
+                <p>
+                    <a href="https://www.outsite.co">Outsite</a>
+                    : Lisbon Coworking Coliving Monthly from $749 
+                    <br/>
+                    <a href="https://beunsettled.co/locations/barcelona-spain/">Unsettled Barcelona</a>
+                    : 1 month coworking - coliving, $2750 – $3300 USD W/ Accommodations, $1400 USD Self Accommodation
+                </p>
+
+                <h2 id="financial-plan">Financial Plan</h2>
+                <p>In order to keep quality of program, each instance maximum capacity should be 12 persons. A bigger group will make logistics unmanageable for one person. Once fully operational it’s possible to produce two instances each month, pausing on August and Dec 15 - January 15. Price of program per participant: 3.190€</p>
+                <h3 id="monthly-fixed-cost">Monthly Fixed Cost</h3>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th style="text-align: right">Concept</th>
+                            <th style="text-align: right">Price</th>
+                            <th style="text-align: right">Unit</th>
+                            <th style="text-align: right">Subtotal</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="text-align: right">Salary for Manager</td>
+                            <td style="text-align: right">2.000,00 €</td>
+                            <td style="text-align: right">12</td>
+                            <td style="text-align: right">24.000,00 €</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: right">Hub</td>
+                            <td style="text-align: right">1.500,00 €</td>
+                            <td style="text-align: right">12</td>
+                            <td style="text-align: right">18.000,00 €</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: right"></td>
+                            <td style="text-align: right"></td>
+                            <td style="text-align: right">Yearly Expense</td>
+                            <td style="text-align: right">42.000,00 €</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: right"></td>
+                            <td style="text-align: right"></td>
+                            <td style="text-align: right">Monthly Expense</td>
+                            <td style="text-align: right">3.500,00 €</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p>Payroll includes taxes, net salary will be a smaller amount.</p>
+
+                <h3 id="variable-cost-per-participant">Variable Cost per participant</h3>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th style="text-align: right">Concept</th>
+                            <th style="text-align: right">Price</th>
+                            <th style="text-align: right">Unit</th>
+                            <th style="text-align: right">Subtotal</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="text-align: right">Transportation</td>
+                            <td style="text-align: right">25,00 €</td>
+                            <td style="text-align: right">10</td>
+                            <td style="text-align: right">250,00 €</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: right">Dinners</td>
+                            <td style="text-align: right">100,00 €</td>
+                            <td style="text-align: right">10</td>
+                            <td style="text-align: right">1.000,00 €</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: right">Merchandising</td>
+                            <td style="text-align: right">100,00 €</td>
+                            <td style="text-align: right">1</td>
+                            <td style="text-align: right">100,00 €</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: right">Marketing</td>
+                            <td style="text-align: right">100,00 €</td>
+                            <td style="text-align: right">1</td>
+                            <td style="text-align: right">100,00 €</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: right">Half board</td>
+                            <td style="text-align: right">30,00 €</td>
+                            <td style="text-align: right">10</td>
+                            <td style="text-align: right">300,00 €</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: right"></td>
+                            <td style="text-align: right"></td>
+                            <td style="text-align: right">Total</td>
+                            <td style="text-align: right">1.750,00 €</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p>Transportation from the hub to the afternoon activity will be provided by us. Then dinner location will be on a walking range.</p>
+
+                <h3 id="full-instance-12-participants-pl">Full Instance (12 participants) P&amp;L</h3>
+
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Income</td>
+                            <td>31.636,36 €</td>
+                        </tr>
+                        <tr>
+                            <td>Salary for Manager</td>
+                            <td>1.000,00 €</td>
+                        </tr>
+                        <tr>
+                            <td>Hub</td>
+                            <td>750,00 €</td>
+                        </tr>
+                        <tr>
+                            <td>Total fixed costs</td>
+                            <td>1.750,00 €</td>
+                        </tr>
+                        <tr>
+                            <td>Variable cost</td>
+                            <td>21.000,00 €</td>
+                        </tr>
+                        <tr>
+                            <td>Total Costs</td>
+                            <td>22.750,00 €</td>
+                        </tr>
+                        <tr>
+                            <td>Profit/Loss</td>
+                            <td>8.886,36 €</td>
+                        </tr>
+                        <tr>
+                            <td>Number of Students</td>
+                            <td>12</td>
+                        </tr>
+                        <tr>
+                            <td>Income per student</td>
+                            <td>2.636,36 €</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3 id="half-instance-6-participants-pl">Half Instance (6 participants) P&amp;L</h3>
+
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Income</td>
+                            <td>15.818,18 €</td>
+                        </tr>
+                        <tr>
+                            <td>Salary for Manager</td>
+                            <td>1.000,00 €</td>
+                        </tr>
+                        <tr>
+                            <td>Hub</td>
+                            <td>750,00 €</td>
+                        </tr>
+                        <tr>
+                            <td>Total fixed costs</td>
+                            <td>1.750,00 €</td>
+                        </tr>
+                        <tr>
+                            <td>Variable cost</td>
+                            <td>10.500,00 €</td>
+                        </tr>
+                        <tr>
+                            <td>Total Costs</td>
+                            <td>12.250,00 €</td>
+                        </tr>
+                        <tr>
+                            <td>Profit/Loss</td>
+                            <td>3.568,18 €</td>
+                        </tr>
+                        <tr>
+                            <td>Number of Students</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td>Income per student</td>
+                            <td>2.636,36 €</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3 id="scenarios">Scenarios</h3>
+                <h4 id="best-case-scenario-full-occupation-10-months">Best case scenario (Full occupation 10 months)</h4>
+
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Total Income</td>
+                            <td>632.727,27 €</td>
+                        </tr>
+                        <tr>
+                            <td>Total Expense</td>
+                            <td>455.000,00 €</td>
+                        </tr>
+                        <tr>
+                            <td>P/L</td>
+                            <td>177.727,27 €</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h4 id="average-case-scenario-half-occupation-6-months">Average case scenario (half occupation 6 months)</h4>
+
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Total Income</td>
+                            <td>94.909,09 €</td>
+                        </tr>
+                        <tr>
+                            <td>Total Expense</td>
+                            <td>73.500,00 €</td>
+                        </tr>
+                        <tr>
+                            <td>P/L</td>
+                            <td>21.409,09 €</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p>
+                    <a href="https://docs.google.com/spreadsheets/d/1dcsqyuwpzBcRY_XeR1UIc-BbYDlIPSPOwcPVLLXB7tc/edit?usp=sharing">Spreadsheet</a>
+                </p>
+
+            </div>
+            <a class="u-url" href="/businesscase/2021/03/21/madrid-workation-brief.html" hidden></a>
+
+    <hr>
+    <br>
+        </main>
+
+    </body>
+
+</html>
+
