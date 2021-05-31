@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <link rel="stylesheet" href="./resources/css/style.css" /> -->
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Fjalla+One&family=Inter:wght@300;700&display=swap");
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "DM Serif Display", serif;
+}
+:root {
+  --blue: #1e465d;
+  --white: #fefefe;
+  --light-green: #7bb7a1;
+}
+body,
+html,
+header {
+  height: 100%;
+}
+body,
+header,
+div,
+img,
+main,
+section,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--light-green);
+  font-weight: 200;
+}
+header {
+  position: relative;
+  width: 100%;
+}
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: "Inter", sans-serif;
+  position: relative;
+}
+section {
+  background-color: var(--white);
+}
+h1 {
+  font-size: 3rem;
+}
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.us {
+  padding: 20px;
+}
+.us p {
+  margin-top: 20px;
+}
+.box {
+  position: relative;
+  width: 100%;
+  min-height: 400px;
+}
+.workation {
+  font-family: "Fjalla One", sans-serif;
+  text-transform: capitalize;
+  color: var(--white);
+  font-size: 54px;
+}
+/* .overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  padding-left: 25px;
+  color: white;
+  background-color: purple;
+} */
+.overlay {
+  /* width: 479px; */
+  padding: 0 10px;
+  bottom: 50px;
+  height: fit-content;
+  position: absolute;
+}
+table {
+  width: 100%;
+}
+tr th {
+  padding-right: 10px;
+}
+td {
+  border: 1px dotted black;
+  padding-right: 10px;
+}
+thead tr {
+  background-color: aqua;
+}
+
+.hero {
+  height: 100%;
+  position: relative;
+  background-image: url("./resources/img/w-hero.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.hero h2 {
+  color: var(--white);
+  margin-top: 32px;
+}
+.button-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 20px;
+  height: auto;
+}
+.button {
+  width: 219.54px;
+  height: 78.36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 27.4878px;
+  margin-right: 0.5em;
+}
+.button a {
+  text-decoration: none;
+}
+.button.primary a {
+  color: var(--blue);
+}
+.button.secondary a {
+  color: var(--white);
+}
+
+.button.primary {
+  background-color: var(--white);
+  color: var(--blue);
+  border: 2.61789px solid var(--blue);
+}
+.button.secondary {
+  background-color: var(--blue);
+  color: var(--white);
+  border: 2.61789px solid var(--white);
+}
+.gallery ul {
+  display: flex;
+  flex-flow: row;
+  width: 100%;
+  overflow: scroll;
+  padding-left: 0;
+}
+
+.gallery li {
+  list-style-type: none;
+  flex-shrink: 0;
+}
+
+.gallery img {
+  max-height: 300px;
+  object-fit: cover;
+  vertical-align: bottom;
+}
+
+.gallery .box {
+  position: relative;
+}
+
+.gallery .overlay {
+  position: absolute;
+  top: 35%;
+  left: 0;
+  right: 0;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.gallery .overlay.two {
+  top: unset;
+  bottom: 0;
+  max-width: none;
+  padding-left: 0;
+}
+
+.gallery p {
+  color: white;
+  font-size: 2rem;
+  background: #000000ba;
+  padding: 5px 20px;
+  text-align: center;
+}
+
+.gallery p.two {
+  font-size: 1.1rem;
+  margin: 0;
+  border-bottom: 2px;
+  border-top: 2px;
+  border-left: 1px;
+  border-right: 1px;
+  border-color: white;
+  border-style: solid;
+}
+h3,
+p {
+  margin-bottom: 10px;
+}
+.layout-s100-m50 {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.bau > .one {
+  order: 1;
+}
+.bau > .two {
+  order: 2;
+}
+.text-box {
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  transform: translate(0%, -50%);
+  width: calc(100%-20px);
+  height: auto;
+}
+.blue {
+  background-color: var(--blue);
+}
+.text-white {
+  color: var(--white);
+}
+.big {
+  font-size: 1.5em;
+}
+#description ul p,
+#afternoon {
+  font-weight: 800;
+  text-decoration: underline;
+}
+#description li {
+  margin-left: 20px;
+}
+#explain {
+  height: 400px;
+}
+#explain h2 {
+  font-size: 32px;
+  color: var(--white);
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(100% - 150px);
+  text-align: center;
+}
+.cta {
+  height: 500px;
+  position: relative;
+  background-image: url("./resources/img/w-book-now.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.cta .overlay {
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, 0);
+  position: absolute;
+  font-size: 26px;
+}
+.cta .button {
+  height: 46px;
+  border-radius: 20px;
+}
+.cta .text-box {
+  display: flex;
+  justify-content: space-around;
+}
+
+#yesno {
+  position: relative;
+}
+#yesno .text-box {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  color: var(--white);
+  padding: 20px;
+
+  transform: translate(-50%, -50%);
+  width: calc(80%-20px);
+  height: fit-content;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+#yesno .text-box p {
+  color: #424242;
+}
+#yes {
+  height: 500px;
+  position: relative;
+  background-image: url("./resources/img/w-yes.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+#no {
+  height: 500px;
+  position: relative;
+  background-image: url("./resources/img/w-no.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.lead .box {
+  height: 600px;
+}
+.lead .text-box {
+  margin-left: 3em;
+}
+@media (min-width: 737px) {
+  .overlay {
+    width: 479px;
+    right: 100px;
+    bottom: 50px;
+    height: fit-content;
+    position: absolute;
+  }
+  .layout-s100-m50 {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+  }
+  .box {
+    position: relative;
+    width: 100%;
+    height: 400px;
+  }
+  .cta .overlay {
+    height: 160px;
+    width: 359px;
+    left: 120px;
+    top: 120px;
+    border-radius: 0px;
+    position: absolute;
+    font-size: 26px;
+  }
+  #yesno {
+    position: relative;
+  }
+  #yesno .text-box {
+    background-color: initial;
+    position: absolute;
+    right: 20px;
+    bottom: 10%;
+    width: 40%;
+    color: var(--white);
+    padding: 20px;
+
+    transform: translate(0%, -10%);
+    width: calc(100%-20px);
+    height: fit-content;
+  }
+  #yesno .text-box p {
+    color: var(--white);
+    text-shadow: 0px 0px 3px rgba(130, 8, 8, 1);
+  }
+  #yes {
+    height: 500px;
+    position: relative;
+    background-image: url("./resources/img/w-yes.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  #no {
+    height: 500px;
+    position: relative;
+    background-image: url("./resources/img/w-no.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  .cta .overlay {
+    left: 40%;
+    top: 25%;
+    border-radius: 0px;
+    position: absolute;
+    font-size: 26px;
+  }
+}
+</style>
+  </head>
+
+  <body>
+    <header>
+      <div class="hero">
+        <div class="overlay">
+          <img src="./resources/img/w-logo.png" alt="" />
+          <p class="workation">workation</p>
+          <h2>Work on the day, enjoy at night</h2>
+          <div class="button-section">
+            <div class="button primary"><a href="/">Learn More</a></div>
+            <div class="button secondary"><a href="/">Book Now</a></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="layout-s100-m50">
+        <div class="box">
+          <img src="./resources/img/w-bored.png" alt="" />
+        </div>
+        <div class="box">
+          <div class="text-box">
+            <p>
+              2020 has been a year where we were forced to stay home for
+              security reasons.
+            </p>
+            <p>
+              Uncountless hours locked indoors, no clearance to travel or gather
+              with friends.
+            </p>
+            <p class="big">Our lives became too virtual.</p>
+            <p>
+              Remote work became the default and now that ot is becoming safer
+              to return to workplaces, what are you going to do?
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="layout-s100-m50 blue bau">
+        <div class="box two" >
+          <div class="text-box text-white">
+            <p>
+              Back to business as usual, meaning hours of commuting, dealing
+              with interruptions, social anxiety, a 9-to-5 that puts the bread
+              on the table but is completely unfulfilling?
+            </p>
+            <p>Do you wonder if are there greener pastures elsewhere?</p>
+            <p>Do you feel that you are the only one that feels burned out?</p>
+            <p>We have good news for you:</p>
+            <p class="big">
+              <strong>Yes</strong>, there are greener pastures and
+              <strong>no</strong>, you are not alone
+            </p>
+          </div>
+        </div>
+        <div class="box one">
+          <img src="./resources/img/w-traffic.png" alt="" />
+        </div>
+      </section>
+
+      <section class="us">
+        <img src="./resources/img/w-logo-rectangle-light.png" alt="" />
+        <p>
+          After living the exact same feeling as you and convinced that we as
+          humans have the right to have a life of joy beyond work, we designed a
+          5-day onsite experience in which you will receive all the information
+          necessary to create the roadmap to your new life while enjoying
+          amazing activities that will build bonds with your peers at one of the
+          most exciting European cities: Madrid!
+        </p>
+      </section>
+
+      <section class="layout-s100-m50 blue" id="description">
+        <div class="box">
+          <img src="./resources/img/w-community-lunch.png" alt="" />
+        </div>
+        <div class="box">
+          <div class="text-box text-white">
+            <p>This a typical day in our Workation Program:</p>
+            <ul>
+              <p><strong>Morning</strong></p>
+              <li>Training sessions</li>
+              <li>1-on-1 meetings with mentors</li>
+              <li>Tandem with peer</li>
+              <li>Individual work</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="layout-s100-m50 bau">
+        <div class="box two">
+          <div class="text-box">
+            <p id="afternoon">Afternoon</p>
+            <p>
+              Each day a different leisure/cultural activity and dinner in a
+              trendy place
+            </p>
+            <p>Half board provided by us from local suppliers</p>
+          </div>
+        </div>
+        <div class="box one"><img src="./resources/img/w-gynko.png" alt="" /></div>
+      </section>
+     
+      <section class="blue" >
+        <div class="box" id="explain">
+         
+            <h2>Work in the morning in your personal goals and enjoy in the afternoon as if you were on vacation!</h2>
+
+          </div>
+        </div>
+      </section>
+     
+      <section>
+        <div class="cta">
+        <div class="overlay">
+          <p>We are opening on June 21, only 12 spots per program!</p>
+          <div class="box">
+            <div class="button secondary">
+              <a href="/">Book Now</a>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+       
+      <section class="layout-s100-m50" id="yesno" >
+        <div class="box" id="yes">
+          <div class="text-box" >
+         
+<p>Become acquainted with like-minded people that share your same struggle and can become your friends once you move to Spain</p>
+          </div>
+        </div>
+        <div class="box"id="no">
+          <div class="text-box">
+         
+<p>Or just keep doing the same and nothing will change. You will keep earning a salary, living a safe yet dull life without even exploring is a change is at least viable for you</p>
+          </div>
+        </div>
+      </section>
+      <section class="layout-s100-m50 lead">
+        
+        <div class="box">
+          <div class="text-box">
+            <p><strong>Aren’t you convinced just yet? </strong></p>
+  <p>            Dowload our guide: 5 reasons why Madrid is the place to be in 2021</p>
+  </p>        
+  <div class="button secondary">
+    <a href="/">Book Now</a>
+
+</div>
+          </div>
+        </div>
+        <div class="box">
+          <img src="./resources/img/w-lead-magnet.png" alt="" />
+        </div>
+      </section>
+      
+    </main>
+  </body>
+</html>
