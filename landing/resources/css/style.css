@@ -129,8 +129,9 @@ thead tr {
   height: auto;
 }
 .button {
-  width: 219.54px;
-  height: 78.36px;
+  width: auto;
+  min-width: 140px;
+  height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -402,5 +403,15 @@ p {
     border-radius: 0px;
     position: absolute;
     font-size: 26px;
+  }
+  .button {
+    width: 219.54px;
+    height: 78.36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 27.4878px;
+    margin-right: 0.5em;
   }
 }
