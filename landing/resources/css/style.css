@@ -623,7 +623,7 @@ p {
   .first .lorem {
     padding-top: 32px;
     color: #dcdbdb;
-    /* max-width: 800px; */
+    max-width: 60%;
     margin: 0 auto;
     /* width: 100%; */
   }
