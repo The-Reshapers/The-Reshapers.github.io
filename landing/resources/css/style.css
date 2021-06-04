@@ -485,7 +485,7 @@ p {
     flex-direction: row;
     height: 40px;
     justify-content: space-between;
-    width: 97%;
+    /* width: 97%; */
     background-color: var(--blue);
     align-items: center;
   }
